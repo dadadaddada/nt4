@@ -1,0 +1,6 @@
+<root>
+	<Panel class "AddonLoadingRoot">
+		<image id="gamemode" class="SecImg" src="file://{images}/heroes/npc_dota_sasuke.png" />
+	</Panel>
+<root/>	
+	  	
