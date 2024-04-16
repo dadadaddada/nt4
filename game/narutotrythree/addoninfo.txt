@@ -1,0 +1,9 @@
+"AddonInfo"
+{
+	maps			"NarutoMain"
+	"IsPlayable"	"1"
+	"holdout_example"
+	{
+					"MaxPlayers"                    "1"
+	}
+}

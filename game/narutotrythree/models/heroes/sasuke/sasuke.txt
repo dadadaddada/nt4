@@ -1,0 +1,211 @@
+"DOTAAbilities"
+{
+	//=================================================================================================================
+	// HERO: Sasuke
+	//=================================================================================================================
+
+	"npc_dota_hero_sasuke"
+	{
+		"BaseClass"					"npc_dota_hero_troll_warlord"
+		"HeroID"					"200"
+		"Model"           			"models/heroes/sasuke.vmdl"
+		"ModelScale"				"1.0"
+		"LoadoutScale"				"0.0" 
+		"SpectatorLoadoutScale" 	"1.0" 
+		"VersusScale"				"1.0" 
+
+		"SoundSet"					"Sasuke"
+		"GameSoundsFile"			"soundevents/weapons/game_sounds_chakrapunch.vsndevts"
+		
+		"particle_folder"			"particles/hero/sasuke"
+		"GibType"					"default"
+
+		//Picking Screen
+		"IsCustom"					"1"
+
+		"Role"     					"Disabler,Initiator,Durable,Nuker"
+		"Rolelevels"  				"2,2,2,1"
+		"Complexity"				"2"
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+
+		"MovementTurnRate"			"1.5"
+		"MovementSpeed"				"290"
+	
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageMin"   		"89"
+		"AttackDamageMax"   		"95"
+
+		"AttackRange"				"128"
+		"AttackRate"				"1.5"
+		"AttackAnimationPoint"		"0.4"
+
+		// Bounds
+		//-------------------------------------------------------------------------------------------------------------
+		"BoundsHullName"		"DOTA_HULL_SIZE_HERO"
+		"RingRadius"		"70"
+
+
+
+		"AttackSpeedActivityModifiers"
+		{
+			"fast"		"170"
+			"faster"	"275"
+			"fastest"	"350"
+		}
+
+		"ArmorPhysical"				"1"
+		"MagicalResistance"			"20"
+
+		"StatusHealth"    			"200"
+		"StatusHealthRegen"   		"0.300000"
+		"StatusManaRegen"			"0.9"
+		"StatusMana"				"75"
+
+		"AttributePrimary"			"DOTA_ATTRIBUTE_STRENGTH"
+		"AttributeBaseStrength" 	"25" // Base strength
+		"AttributeStrengthGain" 	"3" // Strength bonus per level.
+		"AttributeBaseIntelligence" "16" // Base intelligence
+		"AttributeIntelligenceGain" "1.8" // Intelligence bonus per level.
+		"AttributeBaseAgility" 		"14" // Base agility
+		"AttributeAgilityGain" 		"1.4" // Agility bonus per level.
+
+		"Ability1"        			"anko_giant_snake"
+		"Ability2"        			"anko_senei_ta_jashu"
+		"Ability3"        			"anko_senei_jyashu"
+  		"Ability4"        			"generic_hidden"
+		"Ability5"        			"generic_hidden"
+		"Ability6"        			"anko_sojasosai_no_jutsu"   
+		"Ability7"					"anko_innate_passive"   
+
+		"Ability10"					"special_bonus_armor_5"
+		"Ability11"					"special_bonus_magic_resistance_12"
+
+		"Ability12"					"special_bonus_anko_2"
+		"Ability13"					"special_bonus_anko_6"
+
+		"Ability14"					"special_bonus_anko_3"
+		"Ability15"					"special_bonus_strength_20"
+
+		"Ability16"					"special_bonus_anko_5"
+		"Ability17"					"special_bonus_anko_4"
+
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_HERO"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_HERO"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_HERO"
+		"HasInventory"				"1" // This KV is required for units file only
+
+		"VisionDaytimeRange"		"1800"                            // Range of vision during day light.
+		"VisionNighttimeRange"		"800"                             // Range of vision at night time.
+
+		// Custom KV's
+	    "Gender"      				"female"
+		"Village"					"kirigakure"
+		"RecommendedLine"						"top"
+        
+		"Bot"
+		{
+            "Build"
+            {
+                "1"            "anko_giant_snake"       
+                "2"            "anko_senei_jyashu"  
+                "3"            "anko_senei_jyashu"      
+                "4"            "anko_senei_ta_jashu"        
+                "5"            "anko_senei_jyashu" 
+                "6"            "anko_sojasosai_no_jutsu"
+                "7"            "anko_senei_jyashu"    
+                "8"            "anko_senei_ta_jashu"        
+                "9"            "anko_senei_ta_jashu"     
+                "10"        	"anko_senei_ta_jashu"       
+                "11"        	"anko_giant_snake"       
+                "12"        	"anko_sojasosai_no_jutsu"  
+                "13"        	"anko_giant_snake"      
+                "14"        	"anko_giant_snake"       
+                "15"        	"special_bonus_anko_2"                      
+                "16"        	"special_bonus_armor_5"                      
+                "17"        	""                       
+                "18"        	"anko_sojasosai_no_jutsu"                        
+                "19"        	""                       
+                "20"        	"special_bonus_strength_20"                       
+                "21"        	""                       
+                "22"        	""                       
+                "23"        	""                       
+                "24"        	""                       
+                "25"        	"special_bonus_anko_5"                       
+                "26"        	""                       
+                "27"        	""                       
+                "28"        	""                       
+                "29"        	""                       
+                "30"        	""                       
+            }
+            "AbilitiesList"
+            {
+                "1"								"anko_giant_snake"
+                "2"								"anko_senei_ta_jashu"
+                "3"								"anko_senei_jyashu"
+                "4"								"anko_sojasosai_no_jutsu"
+            }							
+            "Loadout"
+            {
+                //"item_tango"        "ITEM_CONSUMABLE | ITEM_SELLABLE"
+				//"item_tango"        "ITEM_CONSUMABLE | ITEM_SELLABLE"
+				"item_flask"        "ITEM_CONSUMABLE | ITEM_SELLABLE"
+				"item_circlet"        "ITEM_CONSUMABLE | ITEM_SELLABLE"
+				"item_gauntlets"        "ITEM_CONSUMABLE | ITEM_SELLABLE"
+				"item_bracer"        "ITEM_CONSUMABLE | ITEM_SELLABLE"
+				"item_boots"        "ITEM_CONSUMABLE | ITEM_SELLABLE"
+				"item_belt_of_strength"  "ITEM_CONSUMABLE | ITEM_SELLABLE"
+				"item_gloves"        "ITEM_CONSUMABLE | ITEM_SELLABLE"
+				"item_belt_of_strength"        "ITEM_CONSUMABLE | ITEM_SELLABLE"
+				"item_ogre_axe"        "ITEM_CONSUMABLE | ITEM_SELLABLE"
+				"item_sange"        "ITEM_CONSUMABLE | ITEM_SELLABLE"
+				"item_boots_of_elves"        "ITEM_CONSUMABLE | ITEM_SELLABLE"
+				"item_blade_of_alacrity"        "ITEM_CONSUMABLE | ITEM_SELLABLE"
+				"item_yasha"        "ITEM_CONSUMABLE | ITEM_SELLABLE"
+        		"item_aghanims_shard"		"ITEM_CONSUMABLE | ITEM_SELLABLE"
+				"item_point_booster"        "ITEM_CONSUMABLE | ITEM_SELLABLE"
+				"item_ultimate_orb"        "ITEM_CONSUMABLE | ITEM_SELLABLE"
+				"item_ultimate_orb"        "ITEM_CONSUMABLE | ITEM_SELLABLE"
+				"item_ring_of_health"        "ITEM_CONSUMABLE | ITEM_SELLABLE"
+				"item_void_stone"        "ITEM_CONSUMABLE | ITEM_SELLABLE"
+				"item_ultimate_orb"        "ITEM_CONSUMABLE | ITEM_SELLABLE"
+				"item_sphere"        "ITEM_CONSUMABLE | ITEM_SELLABLE"
+				"item_buckler"        "ITEM_CONSUMABLE | ITEM_SELLABLE"
+				"item_platemail"        "ITEM_CONSUMABLE | ITEM_SELLABLE"
+				"item_hyperstone"        "ITEM_CONSUMABLE | ITEM_SELLABLE"
+				"item_assault"        "ITEM_CONSUMABLE | ITEM_SELLABLE"
+				"item_vitality_booster"        "ITEM_CONSUMABLE | ITEM_SELLABLE"
+				"item_reaver"        "ITEM_CONSUMABLE | ITEM_SELLABLE"
+				"item_heart"        "ITEM_CONSUMABLE | ITEM_SELLABLE"
+            }
+		    "HeroType"        "DOTA_BOT_TANK | DOTA_BOT_STUN_SUPPORT"
+            "LaningInfo"
+            {
+                "SoloDesire"        "1"
+                "RequiresBabysit"    "0"
+                "ProvidesBabysit"    "1"
+                "SurvivalRating"    "2"
+                "RequiresFarm"        "1"
+                "ProvidesSetup"        "0"
+                "RequiresSetup"        "1"
+            }
+            "SupportsEasyMode"    "1"
+		}
+
+        "Creature"
+		{
+			"DisableClumpingBehavior"    "1"
+		}
+	}
+
+
+	"npc_dota_hero_medusa" 
+	{
+		"override_hero"   			"npc_dota_hero_medusa"
+		"Model"           			"models/anko_new/anko_base.vmdl"
+		"ModelScale"				"1.0"
+		"LoadoutScale"				"0.90" 
+		"SpectatorLoadoutScale" 	"1.0" 
+		"VersusScale"				"1.0" 
+	}
+}
